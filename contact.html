@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            background-color: #90d5ff;
+        }
+        .out{
+            display: inline-block;
+            border: 2px solid black;
+            border-radius: 20px;
+            height: 70vh;
+            width: 90vh;
+            position: fixed;
+            top: 6rem;
+            left: 25rem;
+            background-color:white;
+        }
+        form{
+            height: 28rem;
+            width: 40rem;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: space-around;
+            background-color: wheat;
+        }
+        input{
+            height: 3em;
+            font-size: 18px;
+            padding-left: 10px;
+            border-radius: 10px;
+            background-color: #90d5ff;
+            box-shadow: 2px 3px;
+        }
+        button{
+            background-color: rgb(79, 129, 138);
+            height: 3em;
+            border-radius: 15px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
 </head>
-<body style="color: white;">
-    <h2>Contact Us</h2>
-    <p>Email: college@gmail.com</p>
-    <p>Phone: 9876543210</p>
+<body>
+    <div class="out">
+        <h1 style="text-align: center;background-color: white;font-size: 35px;">Contact us</h1>
+        <form action="#formSubmit">
+            <input type="text" placeholder="Name"> <br><br>
+            <input type="email" placeholder="Email"><br><br>
+            <input type="text" placeholder="Message"><br><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 </body>
 </html>
