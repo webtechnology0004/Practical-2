@@ -6,7 +6,7 @@
     <title>Document</title>
     <style>
         *{
-            background-color: #90d5ff;
+            background-color: #3e8ede;
         }
         .out{
             display: inline-block;
@@ -18,6 +18,7 @@
             top: 6rem;
             left: 25rem;
             background-color:white;
+            box-shadow: 3px 5px 1px 2px;
         }
         form{
             height: 28rem;
@@ -37,35 +38,50 @@
             font-size: 18px;
             padding-left: 10px;
             border-radius: 10px;
-            background-color: #90d5ff;
-            box-shadow: 2px 3px;
+            background-color: #669bbc;
+            box-shadow: 2px 3px black;
+            color: aliceblue;
+        }
+        ::placeholder{
+            color: white;
         }
         button{
-            background-color: rgb(79, 129, 138);
+            background-color: #003049;
             height: 3em;
             border-radius: 15px;
             color: white;
             font-size: 20px;
+        }
+        button:hover{
+            background-color: black;
         }
         #back{
             color: white;
             text-decoration: none;
         }
         a{
-            background-color:  rgb(79, 129, 138);
+            background-color:  white;
+            text-decoration: none;
+        }
+        h1{
+            text-align: center;
+            background-color: white;
+            font-size: 45px;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 5px;
         }
     </style>
 </head>
 <body>
     <div class="out">
-        <h1 style="text-align: center;background-color: white;font-size: 35px;">Contact us</h1>
+        <h1>Contact us</h1>
         <form action="#formSubmit">
             <input type="text" placeholder="Name"> <br><br>
             <input type="email" placeholder="Email"><br><br>
             <input type="text" placeholder="Message"><br><br>
-            <button type="submit">Send Message</button>
+            <button type="submit" id="backbtn">Send Message</button>
         </form>
     </div>
-    <button><a href="p2.html" id="back">Back to Home</a></button>
+    <button style="background-color: white;"><a href="p2.html">Back to Home</a></button>
 </body>
 </html>
